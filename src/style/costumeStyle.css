@@ -1,0 +1,454 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.container {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+/* ======================================= */
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: rgb(209, 205, 205);
+  background-color: rgb(10, 10, 10);
+}
+
+/* Costume Navbar */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  background-color: rgba(20, 20, 20, 0.911);
+  width: 100%;
+}
+
+.container-navbar {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.navbar-brand {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 27px;
+  font-weight: bold;
+  color: white;
+}
+
+.menu {
+  cursor: pointer;
+}
+
+.nav-navigasi {
+  margin-top: -10px;
+  padding-top: 20px;
+  display: none;
+}
+
+.showNav {
+  display: block;
+}
+
+.list-nav-navigasi {
+  width: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  padding-bottom: 10px;
+}
+
+.list-nav-navigasi li a {
+  font-weight: 400;
+  color: white;
+  font-size: 16px;
+}
+
+.navbar a,
+.navbar-brand {
+  opacity: 0.5;
+  transition: 0.4s;
+}
+
+.navbar a:hover,
+.navbar-brand:hover {
+  opacity: 0.9;
+}
+
+/* Costume main ======================== */
+
+main {
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.judul {
+  padding: 15px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.judul p {
+  padding: 20px;
+  font-size: 15px;
+  text-align: center;
+  color: rgb(73, 73, 73);
+}
+.judul h1 {
+  margin-top: 10px;
+}
+.judul ul {
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 20px;
+}
+.judul li {
+  color: grey;
+  display: inline-block;
+}
+
+.judul ul li {
+  font-size: 15px;
+}
+
+/* costume containerDataCovidInd=================*/
+.contentDataInd {
+  padding-bottom: 70px;
+}
+.containerDataCovidInd {
+  margin-top: -40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.dataGrafik,
+.dataAngka {
+  margin: 5px;
+}
+
+.dataGrafik {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: 1;
+  width: 100%;
+  height: 300px;
+}
+
+.dataAngka {
+  width: 100%;
+  flex-wrap: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Membuat Card */
+
+.card {
+  color: white;
+  background-color: rgba(32, 32, 32, 0.61);
+  width: 100%;
+  height: 70px;
+  text-align: center;
+  padding: 8px;
+  margin-bottom: 3px;
+  border-radius: 5px;
+}
+
+.card h4 {
+  padding-top: 2px;
+  font-size: 14px !important;
+  font-weight: 200;
+}
+
+.card p {
+  margin-top: 1px;
+  font-size: 45px;
+  font-weight: bold;
+}
+.card span {
+  font-size: 15px;
+  font-weight: 300;
+  color: rgb(168, 163, 163);
+}
+/* Costume dataMaluku*/
+
+.dataMaluku {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 40px;
+  justify-content: center;
+}
+
+.dataMaluku .card {
+  margin-top: 15px;
+  width: 100%;
+  padding-bottom: 15px;
+  border-radius: 0;
+  background-color: rgb(22, 22, 22);
+  transition: 0.4s ease-in;
+}
+.dataMaluku .card:hover {
+  box-shadow: 1px 0 10px 2px rgb(115, 79, 150);
+}
+.dataMaluku .card p {
+  font-size: 45px;
+}
+
+/* costume contentDataProvinsiInd */
+hr {
+  border: 1px solid rgb(235, 231, 231);
+}
+.dataSeluruhProvinsiIndo {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.dataSeluruhProvinsiIndo p {
+  padding: 10px 10px 20px 10px;
+}
+.dataSeluruhProvinsiIndo p a:hover {
+  opacity: 0.7;
+}
+/* costume untuk data covid provinsi di Indonesia */
+.dataSeluruhProvinsiIndo h1 {
+  color: black;
+}
+.dataCovidProvinsiIndonesia {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+.dataCovidProvinsiIndonesia table {
+  background-color: rgb(230, 222, 222);
+}
+table,
+table th,
+table td {
+  vertical-align: top;
+  border-bottom: 1px solid rgb(190, 190, 189);
+  color: rgb(48, 47, 47);
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+}
+
+table tr th {
+  padding: 20px;
+  font-size: 15px;
+  background-color: rgba(182, 180, 179, 0.589);
+}
+
+tbody tr td {
+  font-size: 15px;
+  padding: 10px;
+  background-color: rgba(241, 239, 236, 0.993);
+}
+/* Warna tuisan dan backgroud */
+.bg-dis {
+  background-color: rgb(250, 245, 245);
+}
+.bg-whit {
+  background-color: white;
+}
+
+/* Data Perhari */
+.displayDataPerKasus {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.displayDataPerKasus h1 {
+  padding-bottom: 25px;
+  color: black;
+}
+
+.tableUkuran {
+  width: 100%;
+  overflow: auto;
+  height: 500px;
+}
+
+.dataCovidPerHari table,
+.dataCovidPerHari table th,
+.dataCovidPerHari table td {
+  border: none;
+  border-bottom: 1px solid rgb(190, 190, 189);
+}
+
+.dataCovidPerHari table tr th {
+  padding: 10px;
+  font-size: 15px;
+  background-color: rgb(219, 214, 214);
+  border-top: 1px solid rgb(190, 190, 189);
+}
+
+/* Membuat jumlah data perhari */
+.jumDataPerHari {
+  padding-bottom: 5rem;
+}
+.jumDataPerHari h1 {
+  padding-top: 1rem;
+  padding-bottom: 25px;
+  color: black;
+}
+/* ========================================== */
+/* costume about */
+.about {
+  padding-bottom: 10rem;
+}
+.about h1 {
+  margin-top: 30px;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+.about hr {
+  border: 1px solid rgb(131, 129, 127);
+  margin: 15px;
+}
+.about p {
+  padding: 12px;
+  text-align: justify;
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 28px;
+}
+.about a {
+  color: rgb(55, 55, 247) !important;
+}
+.about a:hover {
+  color: rgb(96, 96, 245) !important;
+}
+/* costume footer */
+
+footer {
+  text-align: center;
+  padding: 40px;
+}
+
+/* Responsive */
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) {
+  .dataGrafik {
+    flex: 1.5;
+    width: 500px;
+  }
+  .dataAngka {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  .card {
+    width: 100%;
+    height: 70px;
+    margin: 3px;
+  }
+  /* Costume responsive data maluku */
+  .dataMaluku {
+    display: flex;
+    padding-bottom: 20px;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+  }
+  .dataMaluku .card {
+    width: 250px;
+    border-radius: 5px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {
+  /* Costume navbar */
+  .container-navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    height: 35px;
+  }
+  .navbar-brand {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-content: center;
+  }
+  .nav-navigasi {
+    display: block;
+    padding-top: 10px;
+  }
+  .list-nav-navigasi {
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .list-nav-navigasi {
+    padding-bottom: 0;
+  }
+  .dataCovidProvinsiIndonesia table {
+    width: 70%;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+  .containerDataCovidInd {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {
+  .dataGrafik {
+    width: 500px;
+    height: 300px;
+  }
+}

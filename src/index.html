@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Setuasi Covid-19</title>
+  </head>
+
+  <body>
+    <!-- Membuat Navbar -->
+    <nav class="navbar">
+      <navbar-navigasi></navbar-navigasi>
+    </nav>
+    <!-- Akhir Mambuat Navbar -->
+
+    <!-- Membuat main untuk display data seluruh indonesia -->
+    <main class="contentDataInd">
+      <div class="container">
+        <header class="judul">
+          <h1>Setuasi Covid-19 Di Indonesia</h1>
+          <ul>
+            <li>Update Real-time:</li>
+            <li>
+              <i><span class="waktu"></span></i>
+            </li>
+          </ul>
+        </header>
+        <section class="containerDataCovidInd">
+          <div class="dataGrafik">
+            <canvas id="grafikBatang"></canvas>
+          </div>
+          <div class="dataAngka"></div>
+        </section>
+      </div>
+    </main>
+    <!-- Akhir membuat main untuk display data seluruh Indonesia-->
+
+    <!-- Membuat display tampilan data di Maluku -->
+    <main class="bg-whit">
+      <div class="container">
+        <header>
+          <h1 style="color: black;">Data Covid-19 Di Provinsi Maluku</h1>
+        </header>
+        <section style="text-align: center;">
+          <div class="dataMaluku"></div>
+          <hr />
+        </section>
+        <section class="dataSeluruhProvinsiIndo">
+          <header>
+            <h1>Data Covid-19 Seluruh Provinsi Di Indonesia</h1>
+            <p>
+              <a href="https://kawalcorona.com/">www.kawalcorona.com</a> |
+              <a href="https://covid19.go.id/peta-sebaran"
+                >www.covid19.go.id/peta-sebaran</a
+              >
+            </p>
+          </header>
+          <div class="dataCovidProvinsiIndonesia">
+            <table>
+              <tr>
+                <th style="padding-top: 50px;" rowspan="2">Nama Provinsi</th>
+                <th colspan="3">Kasus</th>
+              </tr>
+              <tr>
+                <th>Positif</th>
+                <th>Sembuh</th>
+                <th>Meninggal</th>
+              </tr>
+              <tbody class="containerDataSeluruhProvinsi"></tbody>
+            </table>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-- Akhir Membuat display tampilan data di Maluku -->
+
+    <!-- Membuat display untuk menampilkan data perkasus diseluruh provinsi di Indonesia -->
+    <main class="bg-dis">
+      <div class="container displayDataPerKasus">
+        <section>
+          <header>
+            <h1>Kasus Covid-19 perHari</h1>
+          </header>
+        </section>
+        <section class="dataCovidPerHari">
+          <div class="headUkur">
+            <table>
+              <thead>
+                <tr>
+                  <th style="width: 20%; padding-top: 25px;" rowspan="2">
+                    Hari Ke
+                  </th>
+                  <th style="width: 80%;" colspan="5">Jumlah Kasus perHari</th>
+                </tr>
+                <tr>
+                  <th style="width: 13%;">Baru</th>
+                  <th style="width: 28%;">Sembuh</th>
+                  <th style="width: 15%;">Meninggal</th>
+                  <th>Dirawat</th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+          <div class="tableUkuran">
+            <table>
+              <tbody class="containerDataPerHari"></tbody>
+            </table>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-- Akhir membuat display untuk menampilkan data perkasus diseluruh profinsi di Indonesia -->
+
+    <!-- Membuat display Jumlah data PerHari -->
+    <main class="bg-whit jumDataPerHari">
+      <div class="container">
+        <section>
+          <header>
+            <h1>Jumlah Kasus Covid-19</h1>
+          </header>
+        </section>
+        <section class="">
+          <div class="headUkur">
+            <table>
+              <thead>
+                <tr>
+                  <th style="width: 17%; padding-top: 45px;" rowspan="2">
+                    Hari Ke
+                  </th>
+                  <th style="width: 83%;" colspan="5">Jumlah Kasus</th>
+                </tr>
+                <tr>
+                  <th style="width: 28%;">Kumulatif</th>
+                  <th style="width: 30%;">Pasien Sembuh</th>
+                  <th style="width: 62%;">Pasien Meninggal</th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+          <div class="tableUkuran">
+            <table>
+              <tbody class="containerDataKasusPerHari"></tbody>
+            </table>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-- Akhir Display data grafik -->
+
+    <!-- Membuat Footer -->
+    <footer>
+      <p>Copyright © 2020 saulPaulus. All rights reserved.</p>
+    </footer>
+    <!--Akhir membuat Footer -->
+
+    <!-- Javascript -->
+  </body>
+</html>
