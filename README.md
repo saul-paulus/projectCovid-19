@@ -7,3 +7,5 @@ untuk menggunakan aplikasi ini di locallhost:
 2. ekstract ke htdocs / locallhost / folder lain,
 3. Buka folder "projectCovid-19" di dalam text editor (Visual studio code disarankan)
 4. buka terminal dan ketikan kode ---> npm install ---> npm run start-dev
+
+hasil deploy dapat dilihat disini: https://eloquent-williams-124e58.netlify.app/
